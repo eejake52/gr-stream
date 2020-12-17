@@ -1,0 +1,27 @@
+<block>
+  <name>Select</name>
+  <key>stream_select</key>
+  <category>[STREAM]</category>
+  <import>import stream</import>
+  <make>stream.select($qty, $n)</make>
+  <callback>set_n($n)</callback>
+  <param>
+    <name>Number of Inputs</name>
+    <key>qty</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Input</name>
+    <key>n</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <nports>$qty</nports>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
