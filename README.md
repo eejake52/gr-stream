@@ -20,3 +20,6 @@ make
 sudo make install
 sudo ldconfig
 ```
+
+## Test
+Try the SelectExample grc file
